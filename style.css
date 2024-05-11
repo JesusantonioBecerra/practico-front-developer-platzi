@@ -245,7 +245,8 @@ p {
     font-size: var(--sm);
   }
 }
-.my-order {
+.my-order,
+.my-order-list {
   width: 100%;
   height: 100vh;
   display: grid;
@@ -291,6 +292,8 @@ p {
     font-size: var(--sm);
     color: var(--very-light-pink);
   }
+}
+.my-order {
   .shopping-cart {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
@@ -310,6 +313,14 @@ p {
     height: 70px;
     border-radius: 20px;
     object-fit: cover;
+  }
+}
+.my-order-list {
+  .order {
+    padding: 0;
+    background-color: var(--white);
+    grid-template-columns: auto 1fr auto;
+    margin-bottom: 12px;
   }
 }
 @media (max-width: 640px) {
