@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <aside class="shopping-cart-template">
+    <div class="my-order-container">
+      <h1 class="title">
+        <img src="./icons/flechita.svg" alt="arrow">Shopping cart
+      </h1>
+      <div class="my-order-content">
+        <div class="shopping-cart">
+            <figure>
+              <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike" class="product-img">
+            </figure>
+            <p class="product-text">Bike</p>
+            <p class="product-price">$30,00</p>
+            <img src="./icons/icon_close.png" alt="Remove product" class="close">
+        </div>
+      </div>
+      <div class="order">
+        <p>
+          <span>Total</span>
+        </p>
+        <p>$560,00</p>
+      </div>
+      <button type="button" class="primary-button">Checkout</button>
+    </div>
+  </aside>
+</body>
+</html>
+<script>
+  for (let index = 0; index < 4; index++) {
+    $( ".shopping-cart" ).clone().appendTo( ".my-order-content" )
+  }
+</script>
